@@ -1,24 +1,50 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #835c07;
 }
 
-header, nav, main, footer {
-    padding: 20px;
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
 }
 
 nav ul {
     display: flex;
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
     margin-right: 20px;
 }
 
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #871f1f;
+    border-radius: 5px;
+}
+
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 0;
+    }
+
+    nav ul li a {
+        padding: 10px;
     }
 }
 
@@ -31,12 +57,12 @@ nav ul li {
 .furniture-item {
     flex: 1 1 calc(50% - 20px);
     box-sizing: border-box;
-    position:relative;
-    overflow:hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 .furniture-item img {
     width: 100%;
     height: 80%;
+    object-fit: cover;
 }
-
