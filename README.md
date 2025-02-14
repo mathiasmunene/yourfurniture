@@ -15,3 +15,6 @@ YourFurniture is an online marketplace for furniture in Kenya. It allows users t
 ## How to Run
 1. Clone the repository.
 2. Open `index.html` in your browser.
+
+## Live link
+mathiasmunene.github.io/yourfurniture/
